@@ -13,7 +13,7 @@ import os
 
 
 @ace.on_message(
-    filters.chat(AUTH_USERS) & filters.private &
+    filters.private &
     filters.incoming & filters.command("ace", prefixes=prefixes)
 )
 async def forward(bot: ace , m: Message):
