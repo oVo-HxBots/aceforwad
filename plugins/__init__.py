@@ -17,13 +17,13 @@ async def Start_msg(bot: ace , m: Message):
     photo="https://telegra.ph/file/d77a3767a8d58da76f2df.jpg",
     caption = f"Hello [{m.from_user.first_name}](tg://user?id={m.from_user.id})\n" +
     f"\nI am Auto Forwarder bot." +
-    f"\nPress /help for More Info.\n\n__**Developer** : ACE\n**Language** : Python\n**Framwork** : Pyrogram__",
+    f"\nPress /help for More Info.\n\n__**Developer** : @Kirodewal \n**Language** : Python\n**Framwork** : Pyrogram__",
     # parse_mode="md",
     reply_markup=InlineKeyboardMarkup(
         [
-            [InlineKeyboardButton("🙋‍♂️Dev Ace", url="https://t.me/AceCallRobot")],
-            [InlineKeyboardButton("Channel", url="https://t.me/WickedSkull")],
-            [InlineKeyboardButton("Repo", url="https://github.com/Mrshivubot/ACE-AUTO-FORWARD/")],
+            [InlineKeyboardButton("🙋‍♂️Dev", url="https://t.me/Kirodewal")],
+            [InlineKeyboardButton("Channel", url="https://t.me/HxBots")],
+            [InlineKeyboardButton("Repo", url="https://github.com/oVo-HxBots/hxforwad")],
         ],
     )
     )
@@ -36,7 +36,7 @@ async def Start_msg(bot: ace , m: Message):
 async def help_msg(bot: ace , m: Message):   
     await bot.send_message(
         m.chat.id,
-        f"**!/usr/bin/env python \n(c) ACE**" +
+        f"**!/usr/bin/env python \n(c) HxBots**" +
         f"\n\nI can Forward message from one chat to another\n"+
         f"Available Commands are :"+
         f"\n\n/ace to start forwarding\n/log - To get Log file\n/restart - To Restart the bot"
