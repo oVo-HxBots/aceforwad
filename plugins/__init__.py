@@ -8,7 +8,7 @@ import sys
 
 
 @ace.on_message(
-    filters.chat(AUTH_USERS) & filters.private &
+    filters.private &
     filters.incoming & filters.command("start", prefixes=prefixes)
 )
 async def Start_msg(bot: ace , m: Message):
@@ -30,7 +30,7 @@ async def Start_msg(bot: ace , m: Message):
 
 
 @ace.on_message(
-    filters.chat(AUTH_USERS) & filters.private &
+    filters.private &
     filters.incoming & filters.command("help", prefixes=prefixes)
 )
 async def help_msg(bot: ace , m: Message):   
@@ -43,7 +43,7 @@ async def help_msg(bot: ace , m: Message):
     )
 
 @ace.on_message(
-    filters.chat(AUTH_USERS) & filters.private &
+    filters.private &
     filters.incoming & filters.command("restart", prefixes=prefixes)
 )
 async def restart_handler(_, m):
@@ -51,7 +51,7 @@ async def restart_handler(_, m):
     os.execl(sys.executable, sys.executable, *sys.argv)
 
 @ace.on_message(
-    filters.chat(AUTH_USERS) & filters.private &
+    filters.private &
     filters.incoming & filters.command("log", prefixes=prefixes)
 )
 async def log_msg(bot: ace , m: Message):   
