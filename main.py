@@ -43,7 +43,7 @@ if __name__ == "__main__" :
     async def main():
         await AceBot.start()
         bot_info  = await AceBot.get_me()
-        LOGGER.info(f"<--- @{bot_info.username} Started (c) ACE --->")
+        LOGGER.info(f"<--- @{bot_info.username} Started (c) HxBots --->")
         await idle()
     
     asyncio.get_event_loop().run_until_complete(main())
